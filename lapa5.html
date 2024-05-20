@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sākums</a></li>
+                <li><a href="lapa1.html">Zāļu darbība</a></li>
+                <li><a href="lapa2.html">Receptes</a></li>
+                <li><a href="lapa3.html">Slimības</a></li>
+                <li><a href="lapa4.html">Karjera</a></li>
+                <li><a href="lapa5.html">JS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Zīmēšana</h1>
+    <form id="zimešanasForma">
+        <label for="figurasTips">Figūras tips:</label>
+        <select id="figurasTips">
+            <option value="aplis">Aplis</option>
+            <option value="taisnsturis">Taisnstūris</option>
+        </select>
+        <br>
+        <label for="x">X koordināte:</label>
+        <input type="number" id="x" value="50">
+        <br>
+        <label for="y">Y koordināte:</label>
+        <input type="number" id="y" value="50">
+        <br>
+        <label for="radiuss">Rādiuss (aplim) / Platums (taisnstūrim):</label>
+        <input type="number" id="radiuss" value="50">
+        <br>
+        <label for="augstums">Augstums (taisnstūrim):</label>
+        <input type="number" id="augstums" value="50">
+        <br>
+        <label for="krasuIzvele">Izvēlieties krāsu:</label>
+        <br>
+        <input type="radio" id="krasuIzveleSarkana" name="krasuIzvele" value="#FF0000">
+        <label for="krasuIzveleSarkana">Sarkana</label>
+        <br>
+        <input type="radio" id="krasuIzveleZala" name="krasuIzvele" value="#00FF00">
+        <label for="krasuIzveleZala">Zaļa</label>
+        <br>
+        <input type="radio" id="krasuIzveleZila" name="krasuIzvele" value="#0000FF">
+        <label for="krasuIzveleZila">Zila</label>
+        <br>
+        <button type="button" onclick="uzzimet()">Uzzīmēt</button>
+    </form>
+    <canvas id="zīmēšanasLaukums" width="300" height="300"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
